@@ -7,9 +7,46 @@
     <title>Portfolio</title>
     <!-- Link to the external CSS file -->
     <link rel="stylesheet" href="https://rewchayanan.github.io/web/styles.css">
+    <style>
+        /* จัดสไตล์สำหรับส่วน Head */
+        #head {
+            display: flex;
+            justify-content: center; /* จัดปุ่มให้อยู่ตรงกลาง */
+            align-items: center; /* จัดให้อยู่แนวเดียวกัน */
+            background-color: #444444; /* สีพื้นหลังเขียว */
+            padding: 15px; /* เพิ่มระยะห่างภายใน */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* เงาสวยงาม */
+        }
+        /* จัดสไตล์สำหรับปุ่ม */
+        #head button {
+            background-color: #fff; /* สีพื้นหลังปุ่ม */
+            color: #444444; /* สีข้อความ */
+            border: none; /* ไม่มีเส้นขอบ */
+            padding: 10px 20px; /* ขนาดของปุ่ม */
+            margin: 0 10px; /* ระยะห่างระหว่างปุ่ม */
+            font-size: 16px; /* ขนาดตัวอักษร */
+            font-weight: bold; /* ตัวอักษรหนา */
+            border-radius: 5px; /* มุมโค้งของปุ่ม */
+            cursor: pointer; /* รูปมือเมื่อวางเมาส์ */
+            transition: all 0.3s ease; /* เพิ่มเอฟเฟกต์ */
+        }
+        /* ปุ่มเมื่อวางเมาส์ */
+        #head button:hover {
+            background-color: #3498db; /* สีเขียวเข้ม */
+            color: #fff; /* สีข้อความเปลี่ยนเป็นขาว */
+            transform: scale(1.1); /* ขยายเล็กน้อย */
+        }
+    </style>
 </head>
 
 <body>
+    <!-- ส่วนหัว -->
+    <div id="head">
+        <button onclick="alert('Navigating to Home')">Home</button>
+        <button onclick="alert('Navigating to About')">About</button>
+        <button onclick="alert('Navigating to Contact')">Contact</button>
+    </div>
+
     <!-- About Section -->
     <div id="about">
         <h2>Portfolio</h2>
