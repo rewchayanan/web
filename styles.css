@@ -1,0 +1,234 @@
+* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa;
+    color: #333;
+    display: flex;  /* ใช้ flexbox เพื่อให้จัดการการจัดวางในแนวตั้งได้ง่ายขึ้น */
+    flex-direction: column;
+    min-height: 100vh;  /* กำหนดความสูงขั้นต่ำให้เต็มหน้าจอ */
+}
+
+/* About Section */
+#about {
+    background-color: #fff;
+    padding: 60px 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #34495e;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.about-content img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #3498db;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-content img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left;
+    padding: 30px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.about-text h3 {
+    font-size: 1.8rem;
+    color: #34495e;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.about-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about-text ul li {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 12px;
+}
+
+.about-text ul li strong {
+    color: #2980b9;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content img {
+        margin-bottom: 20px;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .about-text ul li {
+        font-size: 1rem;
+    }
+}
+
+
+/* Contact Section */
+#contact {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex: 1; /* ให้ #contact ขยายเต็มพื้นที่ที่เหลือ */
+}
+
+.contact-page {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-page .center {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-page h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+}
+
+.contact-wrap .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-wrap .form-control {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #ecf0f1;
+}
+
+.contact-wrap .form-control:focus {
+    border-color: #3498db;
+    background-color: #fff;
+}
+
+.contact-wrap .btn {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.contact-wrap .btn:hover {
+    background-color: #2980b9;
+}
+
+/* Footer Section */
+#footer {
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-link {
+    margin-right: 10px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover .social-icon {
+    transform: scale(1.1);
+}
+
+.copyright {
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content img {
+        margin-bottom: 20px;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .contact-page {
+        padding: 20px;
+    }
+
+    .contact-wrap .form-control {
+        font-size: 1rem;
+    }
+
+    .contact-wrap .btn {
+        width: 100%;
+    }
+}

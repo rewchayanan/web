@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+
+<body>
+    <!-- About Section -->
+    <div id="about">
+        <h2>Portfolio</h2>
+        <div class="about-content">
+            <!-- Profile Picture -->
+            <img src="https://i.ibb.co/NWYYZpC/photo.jpg" alt="Photo" width="300" height="200">
+            
+
+            <!-- About Text -->
+            <div class="about-text">
+                <h3>Profile</h3>
+                <ul>
+                    <li><strong>Name :</strong> Mr. Chayanan Chaisathaporn</li>
+                    <li><strong>Nickname :</strong> Rew</li>
+                    <li><strong>Age :</strong> 27</li>
+                    <li><strong>Sex :</strong> Male</li>
+                </ul>
+
+                <h3>Skills & Technologies</h3>
+                <ul>
+                    <li>HTML, CSS</li>
+                    <li>Python, MySQL</li>
+                    <li>Responsive Web Design</li>
+                </ul>
+
+                <h3>Hobbies</h3>
+                <ul>
+                    <li>Traveling</li>
+                    <li>Listen to Music</li>
+                    <li>Technology</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-page">
+            <div class="container">
+                <div class="center">
+                    <h2>Contact Us</h2>
+                </div>
+                <div class="row contact-wrap">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div id="errormessage"></div>
+                        <form action="" method="post" role="form" class="contactForm">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                                    data-rule="email" data-msg="Please enter a valid email" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                                    data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" rows="5" data-rule="required"
+                                    data-msg="Please write something for us" placeholder="Message"></textarea>
+                                <div class="validation"></div>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="footer-content">
+            <!-- Social Media Links with Images -->
+            <div class="social-links">
+                <a href="https://www.facebook.com/rewchayanan/" target="_blank" class="social-link">
+                    <img src="E:\Web\images\facebook-icon.png" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://line.me/ti/p/hOR5AYQ0TC" class="social-link">
+                    <img src="E:\Web\images\line-icon.png" alt="Line" class="social-icon">
+                </a>
+                <a href="https://github.com/rewchayanan" target="_blank" class="social-link">
+                    <img src="E:\Web\images\github-icon.png" alt="GitHub" class="social-icon">
+                </a>
+            </div>
+
+            <!-- Copyright Info -->
+            <div class="copyright">
+                <p>&copy; 2025 Chayanan Chaisathaporn.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
